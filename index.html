@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/hubei.js"></script>
 
 </head>
 <body>
-    <div id="a14dd9435197416ba99d7d756cff8eb0" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="ffffdcd05944428995c2172f8738ef27" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_a14dd9435197416ba99d7d756cff8eb0 = echarts.init(
-            document.getElementById('a14dd9435197416ba99d7d756cff8eb0'), 'white', {renderer: 'canvas'});
-        var option_a14dd9435197416ba99d7d756cff8eb0 = {
+        var chart_ffffdcd05944428995c2172f8738ef27 = echarts.init(
+            document.getElementById('ffffdcd05944428995c2172f8738ef27'), 'white', {renderer: 'canvas'});
+        var option_ffffdcd05944428995c2172f8738ef27 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -48,32 +49,104 @@
     ],
     "series": [
         {
-            "type": "bar",
-            "name": "\u5546\u5bb6A",
-            "data": [
-                5,
-                20,
-                36,
-                10,
-                75,
-                90
-            ],
-            "barCategoryGap": "20%",
+            "type": "map",
+            "name": " \u622a\u81f3 2020-01-30 14:02",
             "label": {
                 "show": true,
-                "position": "top",
+                "position": "insideTopLeft",
                 "margin": 8
-            }
+            },
+            "mapType": "\u6e56\u5317",
+            "data": [
+                {
+                    "name": "\u6b66\u6c49\u5e02",
+                    "value": 2261
+                },
+                {
+                    "name": "\u9ec4\u5188\u5e02",
+                    "value": 496
+                },
+                {
+                    "name": "\u5b5d\u611f\u5e02",
+                    "value": 399
+                },
+                {
+                    "name": "\u8346\u95e8\u5e02",
+                    "value": 191
+                },
+                {
+                    "name": "\u8944\u9633\u5e02",
+                    "value": 163
+                },
+                {
+                    "name": "\u8346\u5dde\u5e02",
+                    "value": 151
+                },
+                {
+                    "name": "\u968f\u5dde\u5e02",
+                    "value": 143
+                },
+                {
+                    "name": "\u54b8\u5b81\u5e02",
+                    "value": 130
+                },
+                {
+                    "name": "\u9102\u5dde\u5e02",
+                    "value": 123
+                },
+                {
+                    "name": "\u5341\u5830\u5e02",
+                    "value": 119
+                },
+                {
+                    "name": "\u5b9c\u660c\u5e02",
+                    "value": 117
+                },
+                {
+                    "name": "\u9ec4\u77f3\u5e02",
+                    "value": 113
+                },
+                {
+                    "name": "\u6069\u65bd\u571f\u5bb6\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde",
+                    "value": 66
+                },
+                {
+                    "name": "\u4ed9\u6843\u5e02",
+                    "value": 55
+                },
+                {
+                    "name": "\u5929\u95e8\u5e02",
+                    "value": 44
+                },
+                {
+                    "name": "\u6f5c\u6c5f\u5e02",
+                    "value": 10
+                },
+                {
+                    "name": "\u795e\u519c\u67b6\u6797\u533a",
+                    "value": 5
+                }
+            ],
+            "roam": true,
+            "zoom": 1,
+            "showLegendSymbol": true,
+            "emphasis": {}
         }
     ],
     "legend": [
         {
             "data": [
-                "\u5546\u5bb6A"
+                " \u622a\u81f3 2020-01-30 14:02"
             ],
             "selected": {
-                "\u5546\u5bb6A": true
-            }
+                " \u622a\u81f3 2020-01-30 14:02": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "icon": "none"
         }
     ],
     "tooltip": {
@@ -88,60 +161,46 @@
         },
         "borderWidth": 0
     },
-    "xAxis": [
+    "title": [
         {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            },
-            "data": [
-                "\u886c\u886b",
-                "\u7f8a\u6bdb\u886b",
-                "\u96ea\u7eba\u886b",
-                "\u88e4\u5b50",
-                "\u9ad8\u8ddf\u978b",
-                "\u889c\u5b50"
-            ]
+            "text": "Wuhan Coronavirus(2019-nCoV) Cases\nin Hubei Province",
+            "subtext": "\u6570\u636e\u6765\u6e90\uff1a\u4e01\u9999\u533b\u751f\u6570\u636e\u7edf\u8ba1",
+            "padding": 5,
+            "itemGap": 10
         }
     ],
-    "yAxis": [
-        {
-            "show": true,
-            "scale": false,
-            "nameLocation": "end",
-            "nameGap": 15,
-            "gridIndex": 0,
-            "inverse": false,
-            "offset": 0,
-            "splitNumber": 5,
-            "minInterval": 0,
-            "splitLine": {
-                "show": false,
-                "lineStyle": {
-                    "width": 1,
-                    "opacity": 1,
-                    "curveness": 0,
-                    "type": "solid"
-                }
-            }
-        }
-    ]
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 600,
+        "text": [
+            "2000",
+            "0"
+        ],
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ],
+            "opacity": 0
+        },
+        "calculable": false,
+        "inverse": false,
+        "splitNumber": 15,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "outOfRange": {
+            "symbol": ">2000",
+            "color": "red"
+        },
+        "borderWidth": 0
+    }
 };
-        chart_a14dd9435197416ba99d7d756cff8eb0.setOption(option_a14dd9435197416ba99d7d756cff8eb0);
+        chart_ffffdcd05944428995c2172f8738ef27.setOption(option_ffffdcd05944428995c2172f8738ef27);
     </script>
 </body>
 </html>
